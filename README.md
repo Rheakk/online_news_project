@@ -18,8 +18,8 @@ The experiment tests whether readers respond to headline morphs in alignment wit
 ## Repository Structure
 
 ```
-├── cleaning___visualizations.ipynb   # Data cleaning and descriptive visualizations (Python)
-├── experiment3_modeling.R            # Mixed-effects regression models (R)
+├── cleaning_&_viz.ipynb   # Data cleaning and descriptive visualizations (Python)
+├── experiment3_regression_models.R            # Mixed-effects regression models (R)
 ├── README.md
 ```
 
@@ -27,7 +27,7 @@ The experiment tests whether readers respond to headline morphs in alignment wit
 
 ## Scripts
 
-### `cleaning___visualizations.ipynb` — Python
+### `cleaning_&_viz.ipynb` — Python
 
 Processes the raw Qualtrics export and produces all descriptive figures.
 
@@ -48,7 +48,7 @@ Processes the raw Qualtrics export and produces all descriptive figures.
 
 ---
 
-### `experiment3_modeling.R` — R
+### `experiment3_regression_models.R` — R
 
 Fits two pre-registered mixed-effects regression models and renders publication-ready tables.
 
@@ -96,7 +96,7 @@ Both models output PNAS-style formatted tables via `kableExtra` with significanc
 
 ## Dependencies
 
-**Python** (`cleaning_visualizations.ipynb`)
+**Python** (`cleaning_&_viz.ipynb`)
 ```
 pandas, numpy, matplotlib, seaborn, statsmodels, pymer4
 ```
