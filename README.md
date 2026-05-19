@@ -39,13 +39,12 @@ Processes the raw Qualtrics export and produces all descriptive figures.
 | 2 | 6 | Rename demographic columns from Qualtrics codes (Q1–Q20) to readable labels |
 | 3 | 7 | Reshape from participant-level to trial-level (one row per participant × headline) |
 | 4 | 8–9 | Create analysis variables: `Selected`, `Instruction`, `MorphCredibility`, `MorphEngagement`, cue type, headline IDs |
-| 5 | — | Summary tables and three visualizations |
+| 5 | — | Summary tables and two visualizations |
 
 **Outputs:**
 - `analysis_df.csv` — trial-level dataframe consumed by the R modeling script
 - `plot1_dimension_selection.png` — P(selected) by instruction × headline dimension
 - `plot2_cue_selection.png` — P(selected) by instruction × specific cue type
-- `scatter_selection_vs_credibility.png` — selection rate vs. average credibility rating per cue type
 
 ---
 
@@ -97,12 +96,12 @@ Both models output PNAS-style formatted tables via `kableExtra` with significanc
 
 ## Dependencies
 
-**Python** (`cleaning___visualizations.ipynb`)
+**Python** (`cleaning_visualizations.ipynb`)
 ```
 pandas, numpy, matplotlib, seaborn, statsmodels, pymer4
 ```
 
-**R** (`experiment3_modeling.R`)
+**R** (`experiment3_regression_models.R`)
 ```r
 lme4, lmerTest, broom.mixed, kableExtra, tidyverse, ggplot2, stargazer
 ```
